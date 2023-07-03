@@ -1,0 +1,5 @@
+.DS_Store
+
+# Ignore everything in the secrets folder
+secrets/*
+secrets/**/*
