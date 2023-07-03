@@ -12,7 +12,7 @@
         --color-light-blue: #97BCD8;
     }
 
-    highlight { color: var(--color-highlight); }
+    em { color: var(--color-highlight); font-style: normal; }
 
     p { color:var(--color-light-gray); }
     li { color:var(--color-dark-gray); }
@@ -76,3 +76,58 @@ ideal for tasks that utilize hardware accelerators or coprocessors
 - data pattern matching
 - game streaming
 - application streaming
+
+
+
+## Pricing Options
+
+- [On Demand](#on-demand-pricing)
+- [Savings Plans](#savings-plans-pricing)
+- [Reserved Instances](#reserved-instances-pricing)
+- [Spot Instances](#spot-instances-pricing)
+- [Dedicated Hosts](#dedicated-hosts-pricing)
+
+
+### On Demand Pricing
+ideas for short-term, irregular workloads that <em>cannot be interrupted</em> 
+- no upfront costs
+- no minimum contracts
+- instances run until stopped
+- only pay for the compute time used
+
+examples:
+- developing and testing applications
+- running applicatios that have unpredictable usage patterns
+
+not recommended for workloads that last a year or longer ( <em>use reserved instances instead</em> )
+
+### Savings Plans Pricing
+for long-term, steady apps that have a predictable amount of traffic
+- cost savings up to -72% ( compared to on-demand costs ) 
+- 1-3 year contract
+- commit to a consistent amount of compute usage for the contract term
+- usage above committed amount is charged on-demand rates
+
+see AWS Cost Explorer to visualize and analyze cost & usage over time
+
+### Reserved Instances Pricing
+a billing discount applied to the use of on demand instances
+- 1 or 3 year term
+
+options include:
+- Standard Reserved
+- Convertable Reserved
+- Scheduled Reserved
+
+### Spot Instances Pricing
+ideal for workloads w/ flexible start and end times that <em>can withstand interruptions</em>
+- use unused computing capacity
+- cost savings up to -90% ( compared to on-demand costs )
+
+
+### Dedicated Hosts Pricing
+fully dedicated physical servers
+- most expensive
+- meet legal requirements for certain applications
+
+
