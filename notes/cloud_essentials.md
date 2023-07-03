@@ -129,5 +129,3 @@ ideal for workloads w/ flexible start and end times that <em>can withstand inter
 fully dedicated physical servers
 - most expensive
 - meet legal requirements for certain applications
-
-
