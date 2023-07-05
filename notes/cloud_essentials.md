@@ -106,11 +106,11 @@ containers package up code, dependencies and configurations
 # Notes: EC2 (Elastic Compute)
 
 ## Instance Types
-- [General Purpose](#general-purpose-instance)
-- [Compute Optimized](#compute-optimized-instance)
-- [Memory Optimized](#memory-optimized-instance)
-- [Storage Optimized](#storage-optimized-instance)
-- [Accelerated Computing](#accelerated-computing-instance)
+- [# General Purpose](#general-purpose-instance)
+- [# Compute Optimized](#compute-optimized-instance)
+- [# Memory Optimized](#memory-optimized-instance)
+- [# Storage Optimized](#storage-optimized-instance)
+- [# Accelerated Computing](#accelerated-computing-instance)
 
 
 ### General Purpose Instance
@@ -201,64 +201,4 @@ ideal for workloads w/ flexible start and end times that <em>can withstand inter
 ### Dedicated Hosts Pricing
 fully dedicated physical servers
 - most expensive
-<<<<<<< Updated upstream
 - meet legal requirements for certain applications
-=======
-- meet legal requirements for certain applications
-
----
-
-## Scaling
-
-### Auto Scaling
-horizontally auto scale your instance to meet demands
-
-parameters:
-- <b>minimum</b>
-- <b>desired</b> ( defaults to minimum ) 
-- <b>maximum</b>
-
----
-
-## Directing Traffic
-
-### Elastic Load Balancing
-a proxy to manage/balance the request traffic for horizontally scaled instances
-- regional construct ( clients call a single url no matter how many instances exist )
-- auto scaling
-- for both external & internal traffic
-
----
-
-## Messaging & Queuing
-decouple applications by pushing <em>requests</em> made by `service_A` into a <em>queue</em> from which `service_B` will pull.
-
-- this enables one to <em>break down monolithic applications</em> into <em> microservices</em>
-
-services:
-- [SQS](#amazon-sqs-simple-queue-service)
-- [SNS](#amazon-sns-simple-notification-service)
-
-### Amazon SQS (Simple Queue Service)
-send, store & receive messages between software components 
-- uses a queue
-- auto scaling
-- works at any volume
-
-### Amazon SNS (Simple Notification Service)
-subscribe to events
-- uses a publish & subscribe model
-- subscribers can be endpoints e.g.:
-    - SQS queues
-    - AWS Lambda functions
-    - Http/Https web-hooks
-- can also fan out notifications to end users using:
-    - SMS
-    - Mobile Push
-    - Email
-
----
-
-
-
->>>>>>> Stashed changes
